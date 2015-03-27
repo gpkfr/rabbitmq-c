@@ -1,0 +1,23 @@
+Source: rabbitmq-c
+Priority: extra
+Maintainer: Guillaume Pancak <gpkfr@imelbox.com>
+Build-Depends: debhelper (>= 8.0.0), cmake, libssl-dev
+Standards-Version: 3.9.3
+Section: libs
+Homepage: https://github.com/alanxz/rabbitmq-c
+
+Package: rabbitmq-c-dev
+Section: libdevel
+Architecture: any
+Depends: rabbitmq-c0 (= ${binary:Version})
+Description: RabbitMQ C AMQP client library.
+ This is a C-language AMQP client library for use
+ with v2.0+ of the RabbitMQ broker.
+
+Package: rabbitmq-c0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libssl1.0.0
+Description: RabbitMQ C AMQP client library.
+ This is a C-language AMQP client library for use
+ with v2.0+ of the RabbitMQ broker.

@@ -1,0 +1,5 @@
+rabbitmq-c (0.5.2-1) unstable; urgency=low
+
+  * Initial release 
+
+ -- Guillaume Pancak <gpkfr@imelbox.com>  Thu, 26 Mar 2015 17:05:04 +0100
